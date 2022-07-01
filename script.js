@@ -12,8 +12,8 @@ let color = document.querySelectorAll("li");
 for (let i = 0; i < color.length; i++) {
   color[i].addEventListener("click", function getColor() {
     let color = this.getAttribute("class");
-    console.log(color);
-    document.querySelector("div").classList = color;
+    console.log(color); //selected color
+    document.querySelector("div").classList = color; // set new color
   });
 }
 
@@ -22,14 +22,16 @@ let card = document.querySelectorAll("td");
 for (let i = 0; i < card.length; i++) {
   card[i].addEventListener("click", function drawFunc() {
     let color = document.querySelector("div").className;
-    this.classList = color;
+    this.classList = color; //show selected color
   });
 }
 
-// buttons
+// getSize
 let button = document.querySelectorAll("button");
-for (item of button) {
-  item.addEventListener("click", (event) => {
-    console.log(event.target);
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", function getSize() {
+    let p = this.getAttribute("class");
+    console.log(p);
+    document.querySelector("p").classList = p;
   });
 }
