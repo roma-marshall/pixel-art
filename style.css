@@ -1,0 +1,57 @@
+.red {
+  background: red;
+}
+
+.blueviolet {
+  background: blueviolet;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.orange {
+  background: orange;
+}
+
+.white {
+  background: white;
+}
+
+.black {
+  background: black;
+}
+
+.bisque {
+  background: bisque;
+}
+
+.pink {
+  background: pink;
+}
+
+.coral {
+  background: coral;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: fit-content;
+  padding: 0;
+  margin: auto;
+}
+
+li {
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin: 1px;
+}
