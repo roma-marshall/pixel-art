@@ -1,11 +1,11 @@
-let bucket = false;
+let bucket = false; // bucket boolean
 
-document.addEventListener("keydown", (event) => {
-  const key = event.key;
-  bucket = !bucket;
-  console.log(bucket);
-});
-
+// document.addEventListener("keydown", function getBucket(event) {
+//   const key = event.key;
+//   bucket = !bucket; // toggle boolean
+//   initNewListener(bucket); // init new listener for all tds
+//   console.log(bucket);
+// });
 
 // generate new table on click
 let row = 8;
@@ -43,7 +43,7 @@ function initNewListener(bucket) {
       let color = document.querySelector("div").className;
       this.classList = color; // show selected color
       console.log(color);
-      if (bucket == true) {
+      if (bucket === true) {
         document.querySelector("tbody").classList = color; // set paint-bucket color
         this.classList = ""; // remove color class
         console.log("bucket");

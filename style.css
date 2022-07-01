@@ -68,9 +68,9 @@ h3 {
   text-align: center;
 }
 
-table {
+* {
   margin: auto;
-  cursor: url('icons/pencil.svg')0 20, auto;
+  cursor: url('icons/pencil.svg'), auto;
 }
 
 td {
