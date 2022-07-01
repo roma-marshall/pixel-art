@@ -1,4 +1,18 @@
-// generate tables row/cell
+// generate new table on click
+let row = 8;
+let cell = 8;
+function generateTable(row, cell) {
+  let table = document.querySelector("table");
+  table.innerHTML = "";
+  for (let i = 0; i < row; i++) {
+    let row = table.insertRow(i);
+    for (let j = 0; j < cell; j++) {
+      let cell = row.insertCell(j);
+    }
+  }
+}
+
+// generate table on load
 let table = document.querySelector("table");
 for (let i = 0; i < 8; i++) {
   let row = table.insertRow(i);
@@ -34,5 +48,25 @@ for (let i = 0; i < button.length; i++) {
     document.querySelector("p").classList = p;
     console.log(p);
     document.querySelector("p").innerHTML = p;
+
+    switch (p) {
+      case "8x8":
+        row = 8;
+        cell = 8;
+        break;
+      case "12x12":
+        row = 12;
+        cell = 12;
+        break;
+      case "16x16":
+        row = 16;
+        cell = 16;
+        break;
+      case "32x32":
+        row = 32;
+        cell = 32;
+        break;
+    }
+    generateTable(row, cell);
   });
 }
