@@ -68,7 +68,7 @@ h3 {
   text-align: center;
 }
 
-* {
+table {
   margin: auto;
   cursor: url('icons/pencil.svg'), auto;
 }
