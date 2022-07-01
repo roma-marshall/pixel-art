@@ -25,3 +25,11 @@ for (let i = 0; i < card.length; i++) {
     this.classList = color;
   });
 }
+
+// buttons
+let button = document.querySelectorAll("button");
+for (item of button) {
+  item.addEventListener("click", (event) => {
+    console.log(event.target);
+  });
+}
