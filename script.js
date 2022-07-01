@@ -31,7 +31,8 @@ let button = document.querySelectorAll("button");
 for (let i = 0; i < button.length; i++) {
   button[i].addEventListener("click", function getSize() {
     let p = this.getAttribute("class");
-    console.log(p);
     document.querySelector("p").classList = p;
+    console.log(p);
+    document.querySelector("p").innerHTML = p;
   });
 }
