@@ -10,6 +10,7 @@ function generateTable(row, cell) {
       let cell = row.insertCell(j);
     }
   }
+  initNewListener();
 }
 
 // generate table on load
@@ -32,13 +33,18 @@ for (let i = 0; i < color.length; i++) {
 }
 
 // drawFunc
-let card = document.querySelectorAll("td");
-for (let i = 0; i < card.length; i++) {
-  card[i].addEventListener("click", function drawFunc() {
-    let color = document.querySelector("div").className;
-    this.classList = color; //show selected color
-  });
+function initNewListener() {
+  let card = document.querySelectorAll("td");
+  for (let i = 0; i < card.length; i++) {
+    card[i].addEventListener("click", function drawFunc() {
+      let color = document.querySelector("div").className;
+      this.classList = color; //show selected color
+      console.log(color);
+    });
+  }
 }
+
+initNewListener(); // init listener onload for Table
 
 // getSize
 let button = document.querySelectorAll("button");
