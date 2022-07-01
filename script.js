@@ -13,14 +13,7 @@ function generateTable(row, cell) {
   initNewListener();
 }
 
-// generate table on load
-let table = document.querySelector("table");
-for (let i = 0; i < 8; i++) {
-  let row = table.insertRow(i);
-  for (let j = 0; j < 8; j++) {
-    let cell = row.insertCell(j);
-  }
-}
+generateTable(row, cell); // generate table on load
 
 // getColor
 let color = document.querySelectorAll("li");
@@ -44,7 +37,7 @@ function initNewListener() {
   }
 }
 
-initNewListener(); // init listener onload for Table
+initNewListener(); // init listener onload for table
 
 // getSize
 let button = document.querySelectorAll("button");
