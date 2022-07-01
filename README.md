@@ -31,9 +31,9 @@ Ich habe in meinem Projekt keine 3rd Party Libraries verwendet, weil das Projekt
 
 Um das Projekt lokal auszuführen, folgendes in der Commandline / Bash eingeben:
 
-```console
-$ git clone https://github.com/roma-marshall/pixel-art.git
-$ cd pixel-art
-$ open index.html
+```
+git clone https://github.com/roma-marshall/pixel-art.git
+cd pixel-art
+open index.html
 ```
 ---
