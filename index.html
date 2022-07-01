@@ -50,7 +50,10 @@
       html2canvas(document.querySelector("table"), {
         onrendered: function (canvas) {
           var img = canvas.toDataURL("image/png");
-          result.innerHTML = '<img src="' + img + '">';
+          result.innerHTML = '<img src="' + img + '"><br />';
+          result.innerHTML += result.innerHTML = '<a download="result.png" href="'+img+'">PNG</a>&nbsp;';
+          result.innerHTML += result.innerHTML = '<a download="result.jpg" href="'+img+'">JPG</a>&nbsp;';
+          result.innerHTML += result.innerHTML = '<a download="result.gif" href="'+img+'">GIF</a>';
         },
       });
     });
