@@ -29,7 +29,29 @@
       <button class="16x16">16x16</button>
       <button class="32x32">32x32</button>
     </span>
-    <table></table>
+    <table id="myTable"></table>
   </body>
   <script src="script.js"></script>
+
+  <button id="convert">Convert to image</button>
+  <p id="result"><!-- Result will appear be here --></div>
+
+  <script
+    type="text/javascript"
+    src="https://github.com/niklasvh/html2canvas/releases/download/0.5.0-alpha1/html2canvas.js"
+  ></script>
+  <script>
+    //click event
+    let convertBtn = document.querySelector("#convert");
+    convertBtn.addEventListener("click", () => {
+      //convert table to image
+      var resultDiv = document.getElementById("result");
+      html2canvas(document.getElementById("myTable"), {
+        onrendered: function (canvas) {
+          var img = canvas.toDataURL("image/png");
+          result.innerHTML = '<img src="' + img + '">';
+        },
+      });
+    });
+  </script>
 </html>

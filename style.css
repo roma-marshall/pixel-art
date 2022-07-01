@@ -104,3 +104,8 @@ p {
   margin: 3% auto;
   border: none;
 }
+
+#convert, #result{
+  display: table;
+  margin: 2% auto;
+}
