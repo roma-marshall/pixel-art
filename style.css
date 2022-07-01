@@ -105,7 +105,7 @@ p {
   border: none;
 }
 
-#convert, #result{
+#convert, #result, #preview{
   display: table;
   margin: 2% auto;
 }
