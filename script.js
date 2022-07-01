@@ -1,3 +1,5 @@
+let bucket = false;
+
 // generate new table on click
 let row = 8;
 let cell = 8;
@@ -10,7 +12,7 @@ function generateTable(row, cell) {
       let cell = row.insertCell(j);
     }
   }
-  initNewListener();
+  initNewListener(bucket);
 }
 
 generateTable(row, cell); // generate table on load
@@ -26,18 +28,24 @@ for (let i = 0; i < color.length; i++) {
 }
 
 // drawFunc
-function initNewListener() {
+function initNewListener(bucket) {
   let card = document.querySelectorAll("td");
+
   for (let i = 0; i < card.length; i++) {
     card[i].addEventListener("click", function drawFunc() {
       let color = document.querySelector("div").className;
-      this.classList = color; //show selected color
+      this.classList = color; // show selected color
       console.log(color);
+      if (bucket == true) {
+        document.querySelector("tbody").classList = color; // set paint-bucket color
+        this.classList = ""; // remove color class
+        console.log("bucket");
+      }
     });
   }
 }
 
-initNewListener(); // init listener onload for table
+initNewListener(bucket); // init listener onload for table
 
 // getSize
 let button = document.querySelectorAll("button");
@@ -69,6 +77,3 @@ for (let i = 0; i < button.length; i++) {
     generateTable(row, cell);
   });
 }
-
-
-
