@@ -70,7 +70,7 @@ h3 {
 
 table {
   margin: auto;
-  cursor: url('icons/pencil.svg'), auto;
+  cursor: url('icons/pencil.svg') 0 20, auto;
 }
 
 td {
