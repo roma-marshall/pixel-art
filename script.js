@@ -1,5 +1,12 @@
 let bucket = false;
 
+document.addEventListener("keydown", (event) => {
+  const key = event.key;
+  bucket = !bucket;
+  console.log(bucket);
+});
+
+
 // generate new table on click
 let row = 8;
 let cell = 8;
