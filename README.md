@@ -13,7 +13,7 @@ Folgende Technolgien setze ich in meinem Projekt ein:
 - HTML
 - CSS
 
-Ich habe mich für JavaScript entschieden, weil ich mit dieser Programmiersprache die größte  Erfahrung habe. Außerdem ist es für diese Art von Aufgabe am besten geeignet.
+Ich habe mich für JavaScript entschieden, weil ich mit dieser Programmiersprache die größte Erfahrung habe. Außerdem ist es für diese Art von Aufgabe am besten geeignet.
 
 ## Eingesetzte 3rd Party Libraries
 
