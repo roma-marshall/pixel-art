@@ -21,7 +21,7 @@ Ich habe in meinem Projekt keine 3rd Party Libraries verwendet, weil das Projekt
 
 ## Installation / Ausführen des Projektes
 
-# [Live Demo](https://calm-bonbon-0cf728.netlify.app)
+# [Live Demo](https://pixel-art-challenge.netlify.app)
 
 <img width="1440" alt="Screenshot 2022-07-01 at 16 26 13" src="https://user-images.githubusercontent.com/79694559/176913941-0745ff02-a93d-4258-aa8c-737c978d3b52.png">
 
