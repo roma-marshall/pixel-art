@@ -37,3 +37,6 @@ cd pixel-art
 open index.html
 ```
 ---
+
+## License
+MIT License
